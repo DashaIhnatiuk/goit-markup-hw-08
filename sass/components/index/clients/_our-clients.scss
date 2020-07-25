@@ -1,0 +1,101 @@
+@import '../../../utils/variables';
+.container-our-clients {
+  padding-top: 94px;
+  padding-bottom: 107px;
+
+  @media screen and (max-width: 1200px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+.client {
+  margin-right: 30px;
+
+  @media screen and (max-width: 767px) {
+    margin-right: 0px;
+    width: calc((100% - 30px) / 2);
+  }
+
+  @media screen and (min-width: 767px) {
+    margin-right: 30px;
+    width: calc((100% - 60px) / 3);
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-right: 30px;
+    width: auto;
+  }
+}
+
+// .client:not(:last-child) {
+//   @media screen and (min-width: 1200px) {
+//     margin-right: 0px;
+//   }
+// }
+
+.client:nth-child(3n) {
+  @media screen and (min-width: 767px) {
+    margin-right: 0px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-right: 30px;
+  }
+}
+
+.client:nth-child(n + 4) {
+  @media screen and (min-width: 767px) {
+    margin-top: 30px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-top: 0px;
+  }
+}
+
+.client-margin {
+  @media screen and (max-width: 1200px) {
+    margin-top: 30px;
+  }
+}
+
+.client:nth-child(2n-1) {
+  @media screen and (max-width: 767px) {
+    margin-right: 30px;
+  }
+}
+
+.client:nth-child(n + 3) {
+  @media screen and (max-width: 767px) {
+    margin-top: 30px;
+  }
+}
+
+.client-icons-item {
+  display: flex;
+  width: 170px;
+  height: 90px;
+  justify-content: center;
+  align-items: center;
+
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  fill: $people-icons;
+
+  &:hover {
+    fill: $accent-color;
+    border: 1px solid $accent-color;
+    transition-duration: $duration;
+    transition-timing-function: $cubic;
+  }
+  &:focus {
+    fill: $accent-color;
+    border: 1px solid $accent-color;
+    transition-duration: $duration;
+    transition-timing-function: $cubic;
+  }
+
+  @media screen and (max-width: 1200px) {
+    width: 100%;
+  }
+}

@@ -1,0 +1,87 @@
+@import '../../utils/variables';
+.join {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: $primary-white-color;
+
+  @media screen and (max-width: 1200px) {
+    text-align: center;
+  }
+}
+
+.join-container {
+  @media screen and (min-width: 767px) {
+    margin-right: 88px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-right: 0;
+    margin-left: 66px;
+  }
+}
+
+.container-2 {
+  display: flex;
+  width: 207px;
+
+  padding-left: 0px;
+  padding-right: 0px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 36px;
+}
+.footer-icon-margin {
+  margin-top: 24px;
+  margin-bottom: 0px;
+  margin-right: 94px;
+
+  @media screen and (max-width: 767px) {
+    margin-right: 0;
+    margin-bottom: 60px;
+  }
+
+  @media screen and (max-width: 1200px) {
+    margin-right: 0;
+  }
+}
+.footer_ellipse {
+  display: flex;
+
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: $footer-circle;
+  margin-right: 0px;
+  padding: 0;
+  justify-content: center;
+  align-items: center;
+  fill: $primary-white-color;
+
+  &:hover {
+    background: $accent-color;
+    fill: $primary-white-color;
+    transition-duration: $duration;
+    transition-timing-function: $cubic;
+  }
+  &:focus {
+    background: $accent-color;
+    fill: $primary-white-color;
+    transition-duration: $duration;
+    transition-timing-function: $cubic;
+  }
+}
+
+.portfolio-icons {
+  display: flex;
+
+  box-sizing: border-box;
+
+  align-items: center;
+  justify-content: center;
+
+  &:not(:last-child) {
+    margin-right: 10px;
+  }
+}

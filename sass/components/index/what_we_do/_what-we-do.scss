@@ -1,0 +1,35 @@
+@import '../../../utils/variables';
+.container-what-we-do {
+  padding-top: 94px;
+  padding-bottom: 94px;
+
+  @media screen and (max-width: 1200px) {
+    display: none;
+  }
+}
+
+.white-description {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+
+  text-transform: uppercase;
+  color: $primary-white-color;
+  position: absolute;
+  background-color: $ourwork;
+  bottom: 0;
+  width: 100%;
+  height: 70px;
+  text-align: center;
+  padding: 27px;
+}
+.our-work {
+  width: 370px;
+  height: 294px;
+  z-index: -1;
+  position: relative;
+
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+}

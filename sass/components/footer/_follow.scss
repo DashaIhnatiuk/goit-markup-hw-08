@@ -1,0 +1,70 @@
+@import '../../utils/variables';
+.footer-list {
+  display: flex;
+  margin-top: 20px;
+  align-items: center;
+  justify-content: center;
+
+  @media screen and (max-width: 1200px) {
+    flex-wrap: wrap;
+    display: flex;
+    width: 100%;
+  }
+}
+.footer-input {
+  width: 358px;
+  height: 50px;
+  border: 1px solid $footer-input-border;
+  border-radius: 4px;
+  padding-left: 16px;
+  padding-right: 20px;
+  color: $primary-white-color;
+  background-color: $footer-input-background;
+
+  @media screen and (max-width: 1200px) {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+
+.footer-margin-input {
+  @media screen and (max-width: 1200px) {
+    width: 100%;
+    margin: 0;
+  }
+}
+
+.footer-margin {
+  margin-left: 12px;
+
+  @media screen and (max-width: 1200px) {
+    width: 100%;
+    margin: 0;
+  }
+}
+.join {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: $primary-white-color;
+}
+
+.footer-form {
+  @media screen and (max-width: 767px) {
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 60px;
+  }
+
+  @media screen and (max-width: 1200px) {
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 60px;
+    width: 450px;
+  }
+}

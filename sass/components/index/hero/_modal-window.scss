@@ -1,0 +1,238 @@
+@import '../../../utils/variables';
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: $shading;
+  opacity: 1;
+  visibility: visible;
+  transition: opacity $duration cubic-bezier(0.4, 0, 0.2, 1),
+    visibility $duration cubic-bezier(0.4, 0, 0.2, 1);
+
+  &.is-hidden {
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+  }
+}
+
+.form {
+  width: 528px;
+  height: 580px;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 90px;
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  top: 50%;
+  margin-top: -290px;
+  left: 0;
+  right: 0;
+  z-index: 1;
+
+  background: $primary-white-color;
+  box-shadow: 0px 2px 1px $shadow1, 0px 1px 1px $shadow2, 0px 1px 3px $shadow3;
+  border-radius: 4px;
+
+  @media screen and (max-width: 480px) {
+    width: 100%;
+  }
+
+  @media screen and (min-width: 480px) {
+    width: 450px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 528px;
+  }
+}
+.cancel-btn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 30px;
+  height: 30px;
+  background-color: $primary-white-color;
+  border-radius: 100px;
+  border: 1px solid $modal-cancel-border;
+  margin-top: 4px;
+  margin-right: 20px;
+  fill: $title-text-color;
+  cursor: pointer;
+
+  &:hover {
+    transform: translate(0, -30%);
+  }
+}
+
+.cancel-btn:hover .cancel-icon {
+  fill: $accent-color;
+}
+
+.cancel-icon {
+  position: relative;
+  width: 18px;
+  height: 18px;
+  left: 50%;
+  margin-top: 4px;
+  transform: translate(-50%, 0);
+  fill: $title-text-color;
+}
+.leave-your-information {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 23px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: $title-text-color;
+  margin-top: 36px;
+  width: 100%;
+
+  @media screen and (min-width: 768px) {
+    margin-right: 40px;
+    margin-left: 40px;
+    width: 370px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-right: 0;
+    margin-left: 0;
+    width: 100%;
+  }
+}
+.form-filed {
+  margin-bottom: 28px;
+  position: relative;
+}
+.form-filed input:focus + label + svg {
+  fill: $accent-color;
+}
+
+.form-input:focus {
+  outline: none;
+  border: 1px solid $modal-accent;
+}
+.form-input:not(:placeholder-shown) + .form-label,
+.form-input:focus + .form-label {
+  transform: translateY(-40px) translateX(16px);
+  color: $accent-color;
+}
+
+.form-input {
+  margin: 0;
+  font: inherit;
+  width: 100%;
+  height: 40px;
+  border: 1px solid $modal-cancel-border;
+  box-sizing: border-box;
+  border-radius: 4px;
+  padding-left: 40px;
+  padding-right: 20px;
+}
+.form-label {
+  position: absolute;
+  left: 0;
+  font-size: 14px;
+  top: 50%;
+  transform: translateY(-50%) translateX(40px);
+  color: $primary-text-color;
+  transition: 300ms ease transform;
+}
+.form-icon {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%) translateX(16px);
+}
+.modal_icon {
+  width: 12px;
+  height: 12px;
+  fill: $title-text-color;
+}
+.form-comment {
+  position: absolute;
+  left: 0;
+  top: 0;
+  transform: translateY(12px) translateX(15px);
+  color: $primary-text-color;
+  transition: 300ms ease transform;
+}
+
+.comment {
+  width: 100%;
+  height: 120px;
+  border: 1px solid $modal-cancel-border;
+  box-sizing: border-box;
+  border-radius: 4px;
+  padding-left: 15px;
+  padding-top: 15px;
+
+  &:focus {
+    outline: none;
+    border: 1px solid $modal-accent;
+  }
+}
+.comment:not(:placeholder-shown) + .form-comment,
+.comment:focus + .form-comment {
+  transform: translateY(-22px) translateX(16px);
+  color: $accent-color;
+}
+.policy {
+  font-size: 14px;
+  margin-left: auto;
+  margin-right: auto;
+  letter-spacing: 0.03em;
+  margin-bottom: 32px;
+  text-align: center;
+
+  @media screen and (max-width: 1200px) {
+    font-size: 12px;
+  }
+}
+.checkbox-custom {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+
+  & + label {
+    display: inline-flex;
+    align-items: center;
+    user-select: none;
+    cursor: pointer;
+  }
+
+  & + label::before {
+    content: '';
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    flex-shrink: 0;
+    flex-grow: 0;
+    border: 2px solid $title-text-color;
+    border-radius: 2px;
+    margin-right: 0.5em;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+
+  &:checked + label::before {
+    border-color: $accent-color;
+    background-color: $accent-color;
+    background-image: url('../images/ok.svg');
+  }
+}
+
+.a-policy {
+  text-decoration: none;
+  text-decoration: underline;
+  color: $accent-color;
+  margin-left: 3px;
+}

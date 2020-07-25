@@ -1,0 +1,49 @@
+.site-nav-1 {
+  display: flex;
+  margin-left: auto;
+}
+.site-nav-address {
+  margin-right: 31px;
+  margin-left: auto;
+}
+.link {
+  color: $primary-text-color;
+  display: flex;
+  align-items: center;
+
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  fill: $primary-text-color;
+
+  &:hover {
+    color: $accent-color;
+    fill: $accent-color;
+    transition-duration: $duration;
+    transition-timing-function: $cubic;
+  }
+  &:focus {
+    color: $accent-color;
+    fill: $accent-color;
+    transition-duration: $duration;
+    transition-timing-function: $cubic;
+  }
+}
+
+.contacts-svg {
+  margin-right: 10px;
+
+  &:hover {
+    color: var(--accent-color);
+    transition-duration: $duration;
+    transition-timing-function: $cubic;
+  }
+  &:focus {
+    color: $accent-color;
+    transition-duration: $duration;
+    transition-timing-function: $cubic;
+  }
+}

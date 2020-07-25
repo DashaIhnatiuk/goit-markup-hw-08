@@ -1,0 +1,35 @@
+@import '../../utils/variables';
+
+.footer-icon {
+  display: flex;
+  align-items: center;
+
+  @media screen and (max-width: 1200px) {
+    display: flexbox;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  @media screen and (min-width: 480px) {
+    width: 480px;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 768px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 1200px;
+  }
+}
+.year {
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 2;
+  text-align: center;
+  color: $secondary-text-color;
+
+  @media screen and (max-width: 1200px) {
+    display: none;
+  }
+}

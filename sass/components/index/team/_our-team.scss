@@ -1,0 +1,71 @@
+.color {
+  background-color: #f5f4fa;
+  padding-top: 92px;
+  @media screen and (max-width: 1200px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+.card-color {
+  background-color: $primary-white-color;
+  margin-bottom: 92px;
+  box-shadow: 0px 2px 1px $shadow1, 0px 1px 1px $shadow2, 0px 1px 3px $shadow3;
+
+  @media screen and (max-width: 1200px) {
+    margin-bottom: 0;
+  }
+}
+
+.portfolio-icons {
+  display: flex;
+
+  box-sizing: border-box;
+
+  align-items: center;
+  justify-content: center;
+
+  &:not(:last-child) {
+    margin-right: 10px;
+  }
+}
+.social-ellipce {
+  display: flex;
+
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: $footer-input-background;
+  margin-right: 0px;
+  padding: 0;
+  justify-content: center;
+  align-items: center;
+  fill: $people-icons;
+
+  &:hover {
+    background: $accent-color;
+    fill: $primary-white-color;
+    transition-duration: $duration;
+    transition-timing-function: $cubic;
+  }
+}
+
+.names {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
+  text-align: center;
+  margin-top: 30px;
+  color: $title-text-color;
+}
+.profession {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.18;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 16px;
+  color: $primary-text-color;
+}
+.icons-margin .what-we-do {
+  width: 270px;
+}
