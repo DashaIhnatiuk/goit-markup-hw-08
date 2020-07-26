@@ -1,7 +1,7 @@
 .color {
   background-color: #f5f4fa;
   padding-top: 92px;
-  @media screen and (max-width: 1200px) {
+  @media screen and (max-width: $desktop) {
     padding-top: 60px;
     padding-bottom: 60px;
   }
@@ -11,7 +11,7 @@
   margin-bottom: 92px;
   box-shadow: 0px 2px 1px $shadow1, 0px 1px 1px $shadow2, 0px 1px 3px $shadow3;
 
-  @media screen and (max-width: 1200px) {
+  @media screen and (max-width: $desktop) {
     margin-bottom: 0;
   }
 }
@@ -68,4 +68,25 @@
 }
 .icons-margin .what-we-do {
   width: 270px;
+}
+
+.team-photo {
+  object-fit: cover;
+
+  overflow: hidden;
+  @media screen and (min-width: $mobile) {
+    width: 100%;
+    max-height: 320px;
+    background-position: center bottom;
+  }
+
+  @media screen and (min-width: $tablet) {
+    width: 100%;
+    max-height: 260px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    width: 100%;
+    max-height: 260px;
+  }
 }

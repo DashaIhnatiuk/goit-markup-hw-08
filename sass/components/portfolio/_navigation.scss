@@ -6,7 +6,20 @@
   &-item:not(:last-child) {
     padding-right: 8px;
   }
-  @media screen and (max-width: 481px) {
+
+  @media screen and (min-width: $tablet) {
+    padding-top: 60px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    padding-top: 92px;
+  }
+
+  @media screen and (max-width: $tablet) {
+    &-item:nth-last-of-type(-n + 2) {
+      margin-top: 15px;
+    }
+
     margin-left: 0;
     width: 362px;
     display: flex;

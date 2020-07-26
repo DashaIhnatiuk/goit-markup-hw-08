@@ -5,7 +5,7 @@
   align-items: center;
   justify-content: center;
 
-  @media screen and (max-width: 1200px) {
+  @media screen and (max-width: $desktop) {
     flex-wrap: wrap;
     display: flex;
     width: 100%;
@@ -21,14 +21,14 @@
   color: $primary-white-color;
   background-color: $footer-input-background;
 
-  @media screen and (max-width: 1200px) {
+  @media screen and (max-width: $desktop) {
     width: 100%;
     margin-bottom: 20px;
   }
 }
 
 .footer-margin-input {
-  @media screen and (max-width: 1200px) {
+  @media screen and (max-width: $desktop) {
     width: 100%;
     margin: 0;
   }
@@ -37,7 +37,7 @@
 .footer-margin {
   margin-left: 12px;
 
-  @media screen and (max-width: 1200px) {
+  @media screen and (max-width: $desktop) {
     width: 100%;
     margin: 0;
   }
@@ -51,7 +51,7 @@
 }
 
 .footer-form {
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: $tablet) {
     text-align: center;
     display: flex;
     flex-wrap: wrap;
@@ -59,7 +59,7 @@
     margin-bottom: 60px;
   }
 
-  @media screen and (max-width: 1200px) {
+  @media screen and (max-width: $desktop) {
     text-align: center;
     display: flex;
     flex-wrap: wrap;

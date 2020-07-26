@@ -33,12 +33,12 @@
   margin-right: auto;
   margin-bottom: 46px;
 
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: $mobile) {
     width: 100%;
     font-size: 26px;
   }
 
-  @media screen and (min-width: 480px) {
+  @media screen and (min-width: $mobile) {
     margin-left: auto;
     margin-right: auto;
 
