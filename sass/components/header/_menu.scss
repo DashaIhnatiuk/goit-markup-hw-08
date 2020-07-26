@@ -2,10 +2,34 @@
 
 .site-nav {
   display: flex;
-  margin-left: 85px;
 
+  @media screen and (min-width: 1200px) {
+    margin-left: 85px;
+    margin-right: 200px;
+  }
+
+  @media screen and (max-width: 1199px) {
+    margin-left: 50px;
+    margin-top: 15px;
+  }
   &-item:not(:last-child) {
     margin-right: 52px;
+
+    @media screen and (max-width: 767px) {
+      margin-right: 0;
+    }
+  }
+  @media screen and (max-width: 767px) {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 0;
+    width: 100%;
+  }
+  &-item {
+    @media screen and (max-width: 767px) {
+      width: 100%;
+      text-align: center;
+    }
   }
 }
 
@@ -39,4 +63,8 @@
   background-color: $accent-color;
   transform: scaleX(1);
   transition: transform $duration cubic-bezier(0.4, 0, 0.2, 1);
+
+  @media screen and (max-width: 767px) {
+    bottom: 20px;
+  }
 }

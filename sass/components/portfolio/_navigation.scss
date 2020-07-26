@@ -6,6 +6,17 @@
   &-item:not(:last-child) {
     padding-right: 8px;
   }
+  @media screen and (max-width: 481px) {
+    margin-left: 0;
+    width: 362px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin-bottom: 40px;
+    margin-top: 60px;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
 }
 
 .button2 {

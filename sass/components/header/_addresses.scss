@@ -1,11 +1,39 @@
 .site-nav-1 {
   display: flex;
   margin-left: auto;
+
+  @media screen and (max-width: 767px) {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 0;
+    width: 100%;
+    margin-top: 60px;
+    height: 60px;
+  }
+  @media screen and (min-width: 767px) and (max-width: 1199px) {
+    flex-direction: column;
+    margin-left: 84px;
+  }
 }
+
 .site-nav-address {
   margin-right: 31px;
-  margin-left: auto;
+
+  @media screen and (max-width: 767px) {
+    display: flex;
+    justify-content: center;
+    margin-right: auto;
+    margin-left: auto;
+    width: 100%;
+    text-align: center;
+  }
 }
+.link:first-child {
+  @media screen and (max-width: 480px) {
+    margin-bottom: 10px;
+  }
+}
+
 .link {
   color: $primary-text-color;
   display: flex;
@@ -18,6 +46,11 @@
   letter-spacing: 0.02em;
   text-decoration: none;
   fill: $primary-text-color;
+
+  @media screen and (max-width: 480px) {
+    height: 20px;
+    padding-top: 0;
+  }
 
   &:hover {
     color: $accent-color;
@@ -32,7 +65,13 @@
     transition-timing-function: $cubic;
   }
 }
-
+.link {
+  @media screen and (max-width: 1199px) and (min-width: 768px) {
+    margin-bottom: 10px;
+    align-items: flex-start;
+    margin-left: 0;
+  }
+}
 .contacts-svg {
   margin-right: 10px;
 
