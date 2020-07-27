@@ -228,10 +228,26 @@ picture {
   display: none;
 }
 
-.icon-close {
-  width: 11px;
-  height: 11px;
-  fill: #000000;
+.icon-menu .icon-close {
+  fill: #212121;
+}
+
+.menu-icon {
+  width: 24px;
+  height: 16px;
+}
+
+.menu-icon:hover {
+  fill: #2196f3;
+}
+
+.menu-icon:focus {
+  fill: #2196f3;
+}
+
+.menu-icon.icon-size {
+  width: 19px;
+  height: 19px;
 }
 
 .menu-container {

@@ -1,3 +1,5 @@
+@import '../../utils/variables';
+
 .main-nav {
   display: flex;
   align-items: center;
@@ -28,7 +30,7 @@
   display: none;
 }
 
-.menu-button.is-open .icon-close {
+.menu-button.is-open .icon-close{
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -38,10 +40,25 @@
   display: none;
 }
 
-.icon-close {
-  width: 11px;
-  height: 11px;
-  fill: #000000;
+.icon-menu .icon-close{
+  fill: $title-text-color;
+}
+
+
+.menu-icon{
+  width: 24px;
+  height: 16px;
+  &:hover {
+    fill: $accent-color;
+  }
+  &:focus {
+    fill: $accent-color;
+  }
+}
+
+.menu-icon.icon-size{
+  width: 19px;
+  height: 19px;
 }
 
 .menu-container {
