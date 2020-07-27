@@ -7,7 +7,6 @@
 
   @media screen and (max-width: $desktop) {
     flex-wrap: wrap;
-    display: flex;
     width: 100%;
   }
 }
@@ -51,20 +50,14 @@
 }
 
 .footer-form {
-  @media screen and (max-width: $tablet) {
-    text-align: center;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-bottom: 60px;
-  }
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 60px;
+  width: 450px;
 
-  @media screen and (max-width: $desktop) {
-    text-align: center;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-bottom: 60px;
-    width: 450px;
+  @media screen and (min-width: $desktop) {
+    width: auto;
   }
 }

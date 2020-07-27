@@ -1,18 +1,21 @@
 .color {
   background-color: #f5f4fa;
-  padding-top: 92px;
-  @media screen and (max-width: $desktop) {
-    padding-top: 60px;
-    padding-bottom: 60px;
+
+  padding-top: 60px;
+  padding-bottom: 60px;
+  width: 100%;
+  @media screen and (min-width: $desktop) {
+    padding-top: 92px;
   }
+
 }
 .card-color {
   background-color: $primary-white-color;
-  margin-bottom: 92px;
+  
   box-shadow: 0px 2px 1px $shadow1, 0px 1px 1px $shadow2, 0px 1px 3px $shadow3;
-
-  @media screen and (max-width: $desktop) {
-    margin-bottom: 0;
+  margin-bottom: 0;
+  @media screen and (min-width: $desktop) {
+    margin-bottom: 92px;
   }
 }
 

@@ -1,43 +1,38 @@
 .site-nav-1 {
   display: flex;
-  margin-left: auto;
-
-  @media screen and (max-width: $tablet) {
-    display: flex;
     flex-wrap: wrap;
-    margin-left: 0;
-    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 400px;
     margin-top: 60px;
     height: 60px;
-  }
 
   @media screen and (min-width: $tablet) {
-    display: flex;
-    flex-wrap: wrap;
-    margin-left: 80px;
+    width: min-content;
+    justify-self: end;
+    margin-right: 0;
+    margin-top: 0px;
+    align-items: center;
   }
 
   @media screen and (min-width: $desktop) {
-    display: flex;
+    margin-left: 0;
+    margin-right: 0;
     flex-wrap: nowrap;
-    margin-left: 300px;
+    margin-top: 0px;
+    width: 100%;
+    justify-content: flex-end;
     align-items: center;
   }
 }
-.site-nav-address {
-  margin-right: 31px;
-  margin-left: auto;
 
-  @media screen and (max-width: $tablet) {
-    display: flex;
-    justify-content: center;
-    margin-right: auto;
-    margin-left: auto;
-    width: 100%;
-    text-align: center;
-  }
+.site-nav-address {
+  width: 100%;
+  display: flex;
+  justify-content: center;
 
   @media screen and (min-width: $tablet) {
+    width: auto;
     margin-right: 0;
     margin-left: 0;
 
@@ -48,8 +43,6 @@
 
   @media screen and (min-width: $desktop) {
     margin-right: 31px;
-    margin-left: auto;
-
     &:last-child {
       margin-top: 0px;
     }
